@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>Feedback Form</title>
+</head>
+<body>
+<div class="container" align="center">
+    <form method="post">
+        <h1>Feedback Form</h1>
+        {{ form.as_p }}
+        {% csrf_token %}
+        <input type="submit" value="submit">
+    </form>
+
+</div>
+</body>
+</html>
